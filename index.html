@@ -8,11 +8,11 @@
         <title>
             Temperature converter 
         </title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet"></link>
     </head>
     <body>
         <div class="container">
-            <div class="header">
+            <div class="page-header">
                 <nav>
                     <ul class="nav nav-pills pull-right">
                         <li class="active"> <a href="index.html">Home</a></li>
@@ -23,20 +23,20 @@
                 <h3 class="text-muted">Temperature Converter</h3>
             </div>
             <div class="jumbotron">
-                <p>
-                    La aplicación convierte grados Celcius a Farenheit y viceversa. A continuación se explica qué pasos seguir para usar el conversor de temperaturas:
-                    <ul>
-                        <li>Insertar la temperatura desada. Formato: 20c, -5.8F, etc.</li>
-                        <li>Pulsar el botón "Convertir"</li>
-                        <li>Se mostrará la correspondiente temperatura convertida</li>
-                    </ul>
+                <p align="center">
+                    La aplicación convierte grados Celcius a Farenheit y viceversa. 
+                    <br> Formato: 20c, -5.8F (la letra en mayúscula o minúscula, signo opcional y soporta decimales)
                 </p>
-                <input id="temperatura_original" placeholder="30C"/>
-                <button onclick="calcular_temperatura()">Convertir</button>
-                <span id="temperatura_convertida"></span>
+                <p align="center">
+                    <input id="temperatura_original" placeholder="30C"/>
+                    <button class="btn btn-primary" type="button" onclick="calcular_temperatura()">Convertir</button>
+               </p>
             </div>
+            <!--<h1 align="center">
+                <span class="label label-success">Resultado</span>
+            </h1>-->
+            <div align="center" style="display:none;" id="temperatura_convertida"></div>
         </div>
-        
         
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
