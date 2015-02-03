@@ -45,7 +45,38 @@ function calcular_temperatura(){
                         mensaje_mostrado = "Elija algún tipo al que covertir";
                 }
                 break;
-            
+            //De farenheit a...
+            case 'f':
+            case 'f':
+                switch (tipo_conversion) {
+                    //farenheit
+                    case 'f':
+                        mensaje_mostrado = numero + "º Farenheit";
+                        break;
+                        //celcius
+                    case 'c':
+                        numero = (5*(numero - 32))/9;
+                        mensaje_mostrado = numero + "º Celcius";
+                        break;
+                        //kelvin
+                    case 'k':
+                        numero = (5*(numero - 32))/9 + 273.15;
+                        mensaje_mostrado = numero + "º Kelvin";
+                        break;  
+                    //rankine
+                    case 'ra':
+                        numero = numero + 459.67;
+                        mensaje_mostrado = numero + "º Rankine";
+                        break;
+                    //reaumur
+                    case 're':
+                        numero = (4*(numero - 32))/9;
+                        mensaje_mostrado = numero + "º Réaumur";
+                        break;    
+                    default:
+                        mensaje_mostrado = "Elija algún tipo al que covertir";
+                }
+                break;
             default:
         }
         temperatura_convertida.className = "alert alert-success"
