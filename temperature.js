@@ -47,7 +47,7 @@ function calcular_temperatura(){
                 break;
             //De farenheit a...
             case 'f':
-            case 'f':
+            case 'F':
                 switch (tipo_conversion) {
                     //farenheit
                     case 'f':
