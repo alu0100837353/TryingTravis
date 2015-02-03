@@ -5,7 +5,7 @@ function calcular_temperatura(){
     /*
     * Comprobamos que el valor introducido tiene el formato correcto, si no se muestra una alerta 
     */
-    if(temperatura.match(/[+-]?\d+((\.)\d+)?\s*[CcFf]/)){
+    if(temperatura.match(/([+-]?\d+(?:\.\d+)?)\s*([CcFf])/)){
         
         temperatura_convertida.className = "alert alert-success"
         temperatura_convertida.style.display = "block"
