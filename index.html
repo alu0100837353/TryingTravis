@@ -10,6 +10,7 @@
         </title>
         <link href="css/normalize.css" rel="stylesheet" type="text/css"></link>
         <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
     </head>
     <body>
         <div class="container">
@@ -25,25 +26,22 @@
                 <h3 class="text-muted">Temperature Converter</h3>
             </div>
             <div class="jumbotron">
-                <p align="center">
+                <p>
                     La aplicación convierte grados Celcius/Farenheit al resto de tipos: Farenheit, Celcius, Kelvin, Rankine y Réaumur. 
                     <br> Formato: 20c, -5.8F (la letra en mayúscula o minúscula, signo opcional y soporta decimales)
                 </p>
-                <p align="center">
-                    <input id="temperatura_original" placeholder="30C"/>
+                <p>
+                    <input class="input-text" id="temperatura_original" autofocus placeholder="30C"/>
                     <button class="btn btn-primary" type="button" onclick="calcular_temperatura()">Convertir</button>
                </p>
-               <p align="center">
-                   <input type="radio" name="grados" id="farenheit" value="f">Farenheit</imput>
+               <p>
+                   <input class="input-radio" type="radio" name="grados" id="farenheit" value="f">Farenheit</imput>
                    <input type="radio" name="grados" id="celcius" value="c">Celcius</imput>
                    <input type="radio" name="grados" id="kelvin" value="k">Kelvin</imput>
                    <input type="radio" name="grados" id="rankine" value="ra">Rankine</imput>
                    <input type="radio" name="grados" id="reaumur" value="re">Réaumur</imput>
                </p>
             </div>
-            <!--<h1 align="center">
-                <span class="label label-success">Resultado</span>
-            </h1>-->
             <div align="center" style="display:none;" id="temperatura_convertida"></div>
         </div>
         
