@@ -1,7 +1,7 @@
 function calcular_temperatura(){
     
     var temperatura = temperatura_original.value;//guardamos el valor de la temperatura qe ha insertado el usuario
-    var expresion_regular = /([+-]?\d+(?:\.\d+)?)\s*([CcFf])/;
+    var expresion_regular = /^([+-]?\d+(?:\.\d+)?)\s*([CcFf])$/;
     var matching = temperatura.match(expresion_regular);
     var mensaje_mostrado = "Error en los datos de entrada. Pruebe algo cómo se indica en el formato.";
     /*
