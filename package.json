@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/alu0100697032/temperature_conversor/issues"
   },
-  "homepage": "https://github.com/alu0100697032/temperature_conversor"
+  "homepage": "https://github.com/alu0100697032/temperature_conversor",
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0",
+    "node-static": "^0.7.6"
+  }
 }
