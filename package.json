@@ -1,0 +1,22 @@
+{
+  "name": "temperature_converter",
+  "version": "0.0.0",
+  "description": "alu0100697032@ull.edu.es temperature converter",
+  "main": "temperature.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alu0100697032/temperature_conversor.git"
+  },
+  "author": "Víctor Hernández Pérez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alu0100697032/temperature_conversor/issues"
+  },
+  "homepage": "https://github.com/alu0100697032/temperature_conversor"
+}
