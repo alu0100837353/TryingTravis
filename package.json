@@ -23,6 +23,8 @@
     "blanket": "^1.1.6",
     "chai": "^1.10.0",
     "gulp": "^3.8.11",
+    "gulp-concat": "^2.4.3",
+    "gulp-util": "^3.0.3",
     "mocha": "^2.1.0",
     "node-static": "^0.7.6"
   }
