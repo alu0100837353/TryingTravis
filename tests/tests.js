@@ -1,11 +1,37 @@
 var assert = chai.assert;
 
-suite('temperature', function(){
-    test('32f = 0c', function(){
-       temperatura_original.value = "32f"; 
-       celcius.checked = true;
-       calcular_temperatura();
-       assert.deepEqual(temperatura_convertida.innerHTML, "0º Celcius")
+suite('Temperature converter', function(){
+    suite('Farenheit to...', function(){
+        test('32f = 0º Celcius', function(){
+           temperatura_original.value = "32f"; 
+           celcius.checked = true;
+           calcular_temperatura();
+           assert.deepEqual(temperatura_convertida.innerHTML, "0º Celcius")
+        });
+        test('0f = 0º Farenheit', function(){
+           temperatura_original.value = "0f"; 
+           farenheit.checked = true;
+           calcular_temperatura();
+           assert.deepEqual(temperatura_convertida.innerHTML, "0º Farenheit")
+        });
+        test('50f = 283.15º Kelvin', function(){
+           temperatura_original.value = "50f"; 
+           kelvin.checked = true;
+           calcular_temperatura();
+           assert.deepEqual(temperatura_convertida.innerHTML, "283.15º Kelvin")
+        });
+        test('10f = 469.67º Rankine', function(){
+           temperatura_original.value = "10f"; 
+           rankine.checked = true;
+           calcular_temperatura();
+           assert.deepEqual(temperatura_convertida.innerHTML, "469.67º Rankine")
+        });
+        test('41f = 469.67º Réaumur', function(){
+           temperatura_original.value = "41f"; 
+           reaumur.checked = true;
+           calcular_temperatura();
+           assert.deepEqual(temperatura_convertida.innerHTML, "4º Réaumur")
+        });
     });
     test('5X = error', function() {
         temperatura_original.value = "5X";
