@@ -65,9 +65,11 @@ suite('Temperature converter', function(){
            assert.deepEqual(temperatura_convertida.innerHTML, "1.6º Réaumur")
         });
     });
-    test('5X = error', function() {
-        temperatura_original.value = "5X";
-        calcular_temperatura();
-        assert.deepEqual(temperatura_convertida.innerHTML, "Error en los datos de entrada. Pruebe algo cómo se indica en el formato.");
+    suite('Error', function(){
+        test('5X = error', function() {
+            temperatura_original.value = "5X";
+            calcular_temperatura();
+            assert.deepEqual(temperatura_convertida.innerHTML, "Error en los datos de entrada. Pruebe algo cómo se indica en el formato.");
+        });
     });
 });
