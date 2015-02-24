@@ -1,6 +1,14 @@
 var assert = chai.assert;
 
 suite('Temperature converter', function(){
+    
+    setup(function(){
+      if (typeof __html__ !== 'undefined') {
+          document.body.innerHTML = __html__['tests/index.html'];
+          temperatura_original = document.getElementById('temperatura_original');
+          temperatura_convertida = document.getElementById('temperatura_convertida');
+      }
+    });
     suite('Farenheit to...', function(){
         test('32f = 0º Celcius', function(){
            temperatura_original.value = "32f"; 
