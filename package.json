@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "tests"
+    "test": "node static_server"
   },
   "repository": {
     "type": "git",
