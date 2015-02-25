@@ -24,7 +24,8 @@ module.exports = function(config) {
       '*.js',
       'tests/*.js',
       'js/temperature.js',
-      'index.html'
+      'index.html',
+      'jquery-2.1.3.min.js'
     ],
 
 
