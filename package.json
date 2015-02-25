@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node static_server"
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
+    "karma": "node_modules/karma/bin/karma start"
   },
   "repository": {
     "type": "git",
