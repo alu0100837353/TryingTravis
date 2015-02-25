@@ -10,7 +10,7 @@ la página web que albergará el conversor.
 
 Información:
 ============
-* Víctor Hernández Pérez
+* Víctor Hernández Pérez & David Rodríguez González de Chaves
 * Grado en Ingeniería Informática
 * Tercer cuatrimestre 
 * Itinerario: Computación
